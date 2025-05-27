@@ -46,7 +46,7 @@ Note that only the 2015 file was used for most analysis.
 Visualizing each feature shows little variation to the overall trend based on year. Hence, modelling results will vary only slightly allowing us to just analyze a single year. 
 
 ### 4. **Linear Regression Modelling**
-
+![Regression Plot](https://github.com/Edneil-Soriano/WHR_Analysis/raw/main/figures/Regression.png)
 We applied:
 - **Linear Regression**
 - **Ridge Regression** (with fixed and CV-based regularization)
