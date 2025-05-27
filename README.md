@@ -61,7 +61,7 @@ Across all models, **Family**, **Economy**, and **Health** consistently stood ou
 
 
 ### 5. **Principal Component Analysis (PCA)**
-
+![Correlation Matrix](https://github.com/Edneil-Soriano/WHR_Analysis/blob/main/figures/correlation-matrix.png) <br/>
 We visualized the Pearson correlation matrix between all features.
 
 **Implication**:  
@@ -73,7 +73,7 @@ This insight is valuable for **policy-making**: improving a single metric (Econo
 ---
 
 ### 5. **PCA Scree Plot**
-
+![Scree Plot](https://github.com/Edneil-Soriano/WHR_Analysis/blob/main/figures/scree-plot.png)
 Principal Component Analysis (PCA) reduced the 6-dimensional feature space into 2 dimensions for easier visualization.
 
 ** Implication**:  
@@ -83,6 +83,8 @@ The first two principal components (PC1 and PC2) capture about **70% of the tota
 
 
 ### 6. **Clustering with K-Means**
+![Regression Plot](https://github.com/Edneil-Soriano/WHR_Analysis/blob/main/figures/clusterk2.png)
+![Regression Plot](https://github.com/Edneil-Soriano/WHR_Analysis/blob/main/figures/clusterk5.png)
 We applied **k-means clustering** on the 2D PCA-transformed data:
 - `k = 2` → Divides countries into broad **“Happy”** and **“Unhappy”** groups.
 - `k = 5` → Reveals more nuanced happiness levels.
@@ -105,11 +107,9 @@ We applied **k-means clustering** on the 2D PCA-transformed data:
 ---
 
 ## Insights and Conclusions
-Happiness scores are generally influenced most by
+Happiness scores are generally influenced most by Family, Economy, and Health, while Generosity and Trust in government had minimal impact. PCA reduced the dataset to two PCs that captured ~70% of the variance, making patterns easier to visualize. 
 
+Some regional patterns were evident in PCA space, though clustering also revealed similarities between countries that are not geographically close. For instance, the Philippines ranked relatively high despite its lower GDP, suggesting the influence of cultural and social resilience. In contrast, Togo did not appear at the extreme end of the PC space despite having the lowest WHR score, which suggests that a single score may not capture all dimensions of national well-being.
 
-Some regional patterns are visible in PCA space.
-
-
-Clustering reveals similarities between countries that might not be geographically close.
+Given the strong correlation between Economy with Health and Family, investments in economic development may yield compound benefits across other happiness indicators. These findings also suggest that while economic performance is important, broader social and cultural structures contribute significantly to how people percieve happiness.
 
